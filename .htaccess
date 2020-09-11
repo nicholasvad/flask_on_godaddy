@@ -1,0 +1,10 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/absolute/path/to/app"
+PassengerBaseURI "/"
+PassengerPython "/absolute/path/to/virtualenv/bin/file/3.7/bin/python"
+PassengerAppLogFile "/absolute/path/to/logs/app.log"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+
+# Turn off directory index if necessary
+Options -Indexes
+
