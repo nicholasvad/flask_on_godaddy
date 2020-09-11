@@ -33,11 +33,11 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World online!'
 ```
-Beware changes to these files when you stop and start the app. I took copies of these just in case restarting the Python app caused them to be replaced; it did happen somehow once.
+Beware changes to these files when you stop and start the app. I took copies of these just in case restarting the Python app caused them to be replaced; it did happen once somehow.
 
 When you create an app, GoDaddy creates a virtual environment. This is in the directory:\
 `/home/username/virtualenv/my_app_directory/<your Python version>` \
-Use this command to activate your virtual environment:\
+Use this command to activate your virtual environment:
 ```
 $ source source /home/username/virtualenv/my_app_directory/3.7/bin/activate && cd /home/username/my_app_directory
 ```
@@ -64,7 +64,7 @@ PassengerAppLogFile "/absolute/path/to/logs/app.log"
 Options -Indexes
 ```
 \
-There is a special trick to restart the app from the command line if you have made changes, to save the risk of any of your files being overwritten when you stop and start the app within cPanel.  Simple `touch` the empty `restart.txt` file in the `tmp` directory:
+There is a special trick to restart the app from the command line if you have made changes, to save the risk of any of your files being overwritten when you stop and start the app within cPanel.  Simply `touch` the empty `restart.txt` file in the `tmp` directory:
 ```
 $ touch tmp/restart.txt
 ```
